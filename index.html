@@ -217,7 +217,7 @@ navigator.mediaDevices.getUserMedia({ audio: false, video: true })
 // turning on and off the timer that triggers sending pictures and imu information several times a second
   startstopicon.addEventListener('click', function(ev){
       if(cameraTimer == null) {
-          ros.connect("ws://192.168.3.103:9090");
+          ros.connect("ws://23.96.41.177:9090");
          p =  cameraOn();
 	window.alert("Goodbye");
           cameraTimer = setInterval(function(){
